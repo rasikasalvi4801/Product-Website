@@ -1,0 +1,339 @@
+:root{
+    --darkcolor: #1b262c;
+    --lightcolor:#0f4c75;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.container{
+    margin: auto;
+    max-width:1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.bg-g{
+    background:var(--lightcolor);
+}
+.bg-mb{
+    background-color: var(--darkcolor) ;
+}
+.clr{
+    clear: both;
+}
+
+/* HEADER CONTENT */
+
+#header-content{
+    position: fixed;
+    width: 100%;
+    background-color:var(--darkcolor);  
+}
+#head-text a {
+    color: white;
+    font-size: 30px;
+   padding-left: 10px;
+  display: inline-block;
+  padding-top: 23px;
+  font-family: 'Libre Baskerville', cursive;
+  letter-spacing: 2px;
+}
+header h1{
+    display: inline-block;
+}
+#header-img {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%; 
+    float: left;
+      display: block;
+      margin-left: 30px;
+     margin-top: 14px;
+}
+nav{
+    display: inline;
+}
+#nav-bar ul{
+    list-style-type: none;
+    float: right;
+}
+#nav-bar ul li{
+    float: left;
+}
+#nav-bar ul li a{
+    color: white;
+    font-size: 25px;
+ float: right;
+  padding: 25px;
+
+}
+#nav-bar ul li a:hover{
+    background-color:var(--lightcolor) ;
+  
+    color: white;
+}
+  hr{
+    border: 0;
+    height: 5px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+  }
+.heading-email{
+    background-image: url("https://images.pexels.com/photos/1413420/pexels-photo-1413420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    height: 700px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+.heading-email h4{
+    color: black;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 15rem;
+    padding-bottom: 30px;
+}
+.heading-email form{
+    text-align: center;
+    padding: 25px;
+    font-family: 'Libre Baskerville', serif;
+  
+}
+.heading-email form p{
+  padding-bottom: 2rem;
+    font-size: 25px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    
+}
+ .heading-email form input[type="email"]{
+     height: 2.4rem;
+     width: 18rem;
+     border-radius: 5px;
+ }
+ 
+ .heading-email form .btn{
+    display: inline-block;
+     font-size: 20px;
+     border: none;
+     background-color:var(--darkcolor);
+     color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 9px 10px;
+ }
+
+/* FEATURES */
+
+ #features{
+    margin-top: 25px; 
+    margin-bottom: 25px;
+}
+.feature-head h3{
+    text-align: center;
+    color:white;
+    font-size: 32px;
+    padding: 40px;
+    font-family: Oswald;
+    letter-spacing: 10px;
+}
+.feature-head p{
+    text-align: center;
+    color: white;
+    font-size: 27px;
+    padding-bottom: 30px;
+    font-family: "DM Serif Text";
+    letter-spacing: 8px;
+}
+.feature{
+    width: 33.3%;
+    height: 300px;
+   float: left;
+   overflow: hidden;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    border-right: 1px solid var(--lightcolor) ;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 2px;
+}
+.feature p{
+    padding-top: 15px;
+    font-size: 20px;
+}
+.feature i{
+    padding-bottom: 15px;
+    color: var(--lightcolor);
+}
+
+/*IMAGES OR PRICING */
+#images{
+    margin-top: 20px;
+    font-family: 'oswald', serif;
+    display: flex;
+    flex-direction: column;
+}
+
+ #images .price-head h3{
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    padding: 40px;
+    letter-spacing: 10px;
+} 
+.image button{
+   display: inline-block;
+    background-color: var(--darkcolor);
+    color: white;
+    padding: 7px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 160px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+}
+.image button:hover{
+    background-color:var(--lightcolor);
+     color: white;
+     font-weight: bold;
+}
+.prices-content .image img{
+    height:448px;
+     width:448px;
+     overflow: hidden;
+     border: 1px solid black; 
+} 
+.prices-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    padding-top: 30px;
+}
+.prices-content .image p{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.prices-content .image h3{
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+
+/* YOUTUBE VIDEO */
+
+#video{
+    margin-top: 25px; 
+    margin-bottom: 25px;
+}
+.video-head h3{
+    text-align: center;
+    color:white;
+    font-size: 32px;
+    padding: 40px;
+    font-family: Oswald;
+    letter-spacing: 10px;
+}
+iframe{
+    display: block;
+    width: 60%;
+    height: 400px;
+    margin: 15px auto;
+}
+
+/* FOOTER SECTION */
+footer{
+    background-color:var(--lightcolor) ;
+    color: white;
+    letter-spacing: 5px;
+    font-family: 'DM Serif Text', serif;
+}
+footer h4{
+    font-size: 30px;
+    text-align: center;
+   padding: 1rem 0 1rem 0;
+}
+footer p{
+  font-size: 20px;    
+  text-align: center;
+ padding: 0.7rem 0 1rem 0;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media(max-width:768px){
+    #nav-bar{
+        position: static;
+    }
+    #nav-bar ul{
+        float: none;
+    }
+    #nav-bar ul li{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        float: none;
+        padding: 7px;
+        overflow: hidden;
+    }
+    #nav-bar ul li a{
+        float: none;
+    }
+    .heading-email h4{
+       margin-top: 30px;
+        font-size:22px ;
+    }
+    .heading-email form input[type="email"]{
+        height: 2rem;
+        width: 15rem;
+    }
+    .heading-email form .btn{
+       
+         font-size: 16px;
+        padding: 7px 10px;
+     }
+    #features{
+        display: flex;
+        flex-direction: column;
+    }
+    .feature{
+        width: 100%;
+    }
+    .prices-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .video iframe{
+        width: 80%;
+    }
+.image{
+    margin-top: 25px;
+}
+.image button{
+   margin-top: 2%;
+}
+    #footer p{
+    letter-spacing: 3px;
+    }
+}
